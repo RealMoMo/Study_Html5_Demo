@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+    <meta name="keywords" content="login">
+    <meta name="description" content="login">
+</head>
+<body>
+    <!-- 前端 跟 后台交互数据 action="" 提交的页面  默认get方式提交  也可以post提交-->
+    <form action="">
+
+    <!--
+        指定给后台提交通过 name
+        value  指定默认值
+     -->
+    <!-- 添加div标签包裹，只是换行而已 -->
+    <div>
+    账号:<input type="text" name="username" value="admin"/>
+    </div>
+    <div>
+    密码:<input type="password" name="password" value="123456"/>
+    </div>
+    <div>
+
+    <!--
+        checked 默认选中
+        checked="checked"  html5 之前的写法
+        checked  布尔值  有就是true 没有就是false
+
+        添加label标签，作用是点击文本也能选中
+     -->
+    性别:
+    <label>
+    <input type="radio" name="sex" value="man" checked/>男
+    </label>
+    <label>
+    <input type="radio" name="sex" value="women"/>女
+    </label>
+    </div>
+    <div>
+    兴趣：
+    <label>
+    <input type="checkbox" name="like1" value="读书"/>读书
+    </label>
+    <label>
+    <input type="checkbox" name="like2" value="敲代码"/>敲代码
+    </label>
+    <label>
+    <input type="checkbox" name="like3" value="看片"/>看片
+    </label>
+    </div>
+    <!--
+        selected 默认选中
+        支持布尔值   添加就是true  默认是false
+     -->
+    <div>
+    生日:<select name="birthday">
+        <option value="1">1</option>
+        <option value="2" selected="selected">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    </div>
+    <div>
+    <!-- 多行文本域 最好指定其cols 和rows限定多行文本域的大小 -->
+    个人描述:<textarea cols="20" rows="5">hahaha</textarea>
+    </div>
+    <div>
+    <input type="submit" value="提交"/>
+    </div>
+    </form>
+
+</body>
+</html>

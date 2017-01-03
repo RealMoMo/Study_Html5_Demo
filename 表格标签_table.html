@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>表格标签</title>
+    <meta name="keywords" content="table_exer">
+    <meta name="description" content="table_exer">
+</head>
+<body>
+    <!--
+        div + css   元素跟样式相分离
+
+        table   元素和样式混合一起
+        不方便维护 和  css样式的复用
+
+        border   边框
+        align    居中
+        cellpadding  表格的内边距  元素和本身内容的距离
+        cellspacing  外边距        元素和元素之间的距离
+
+        rowspan   跨行
+        colspan   跨列
+     -->
+    <table border="1" align="center"
+    cellpadding="20" cellspacing="5">
+        <caption>表格的名字</caption>
+        <thead>
+            <tr>
+            <!-- th  和td 一样 只是加粗了 -->
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+                <th>婚否</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr>
+                <td>张三</td>
+                <td colspan="2">男</td>
+                <td>否</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>男</td>
+                <td>18</td>
+                <td>否</td>
+            </tr>
+            <tr>
+                <td>王五</td>
+                <td>男</td>
+                <td>18</td>
+                <td>否</td>
+            </tr>
+            <tr>
+                <td>小明</td>
+                <td>男</td>
+                <td>18</td>
+                <td>否</td>
+            </tr>
+        </tbody>
+        <!-- <tfoot>结算</tfoot> -->
+    </table>
+
+</body>
+</html>
